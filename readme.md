@@ -1,6 +1,6 @@
 ## DevStatus
 
-This is the github repo for the tutorial on creating a microservice with Lumen on [prosperotemuyiwa.com](http://prosperotemuyiwa.com)
+This is the github repo for the tutorial on creating a microservice with Lumen on [prosperotemuyiwa.com](http://prosperotemuyiwa.com/developing-a-micro-service-with-lumen/)
 
 
 ### License
