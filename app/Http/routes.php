@@ -17,11 +17,11 @@ $app->get('/', function() use ($app) {
       ]);
 });
 
-$app->get('/{name}', function($name) use ($app) {
+$app->get('/{username}', function($username) use ($app) {
 
   $options  = array('http' => array('user_agent'=> $_SERVER['HTTP_USER_AGENT']));
   $context  = stream_context_create($options);
-  $url = "https://api.github.com/users/" . urlencode($name);
+  $url = "https://api.github.com/users/" . urlencode($username);
   $result = json_decode(file_get_contents($url, true, $context));
   $name = $result->name;
   $public_repos = $result->public_repos;
